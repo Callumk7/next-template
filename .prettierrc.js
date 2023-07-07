@@ -1,6 +1,14 @@
 module.exports = {
-  printWidth: 100,
-  useTabs: false,
-  tabWidth: 2,
-  plugins: [require("prettier-plugin-tailwindcss")],
+	printWidth: 90,
+	useTabs: true,
+	tabWidth: 4,
+	overrides: [
+		{
+			files: ["*.tsx", "*.jsx", "*.html"],
+			options: {
+				useTabs: false,
+				tabWidth: 2,
+			},
+		},
+	],
 };
